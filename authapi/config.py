@@ -1,9 +1,10 @@
 import os
-from .env import setEnvironment
+#from .env import setEnvironment
 
 if os.environ.get('ENV') != "PROD":
     #In heroku the variables will be supplied from heroku
-    setEnvironment()
+    #setEnvironment()
+    pass
 
 SALT = os.environ.get("SALT")
 SECRET_KEY = os.environ.get("SECRET_KEY")
